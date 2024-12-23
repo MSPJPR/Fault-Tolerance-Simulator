@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fault Tolerance Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fault Tolerance Simulator</h1>
+  <div id="simulator">
+    <label for="error-type">Select Error Type:</label>
+    <select id="error-type">
+      <option value="transient">Transient Fault</option>
+      <option value="permanent">Permanent Fault</option>
+    </select>
+    <button id="simulate-btn">Simulate</button>
+    <div id="output"></div>
+  </div>
+
+  <div id="metrics">
+    <h2>Fault Metrics Dashboard</h2>
+    <label for="mttr">Mean Time to Repair (MTTR):</label>
+    <input type="number" id="mttr" placeholder="Enter in hours">
+    <label for="mtbf">Mean Time Between Failures (MTBF):</label>
+    <input type="number" id="mtbf" placeholder="Enter in hours">
+    <button id="calculate-metrics">Calculate Metrics</button>
+    <div id="metrics-output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
